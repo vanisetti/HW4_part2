@@ -1,0 +1,98 @@
+<!--
+Vijaya Anisetti
+vijaya_anisetti@student.uml.edu
+File: hw4.html
+Assignment: Creating an Interactive Dynamic Table
+Created a wepage that has a dynamically changing multiplication table based on the user's 
+input. This file consists of the html that allows me to create the table, sliders and tables. 
+It consists of the form that takes in the users inputs and has all the required plug-ins and 
+stylesheets (jQuery most importantly).
+-->
+
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <link rel="stylesheet"
+  href="https://code.jquery.com/ui/1.12.0/themes/smoothness/jquery-ui.css"/>
+  <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.2/dist/jquery.validate.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <script src="https://ajax.aspnetcdn.com/ajax/jquery.validate/1.9/jquery.validate.js"></script>
+  <link rel="stylesheet" href="hw4.css"/>
+  <script src="hw4.js"></script>
+
+  <title>Dynamic Multiplication Table</title>
+  <!--Header Code-->
+  <div class="header">
+    <div style="background: rgb(91, 167, 129); font-family: 'Courier New', Courier, monospace;" class="jumbotron text-center" >
+      <h1> Dynamic Multiplication Table</h1>
+    </div>
+  </div>
+</head>
+
+<!--BODY code-->
+<body>
+  <div class="container">
+    <div style="font-family: 'Courier New', Courier, monospace">
+      <h3>Select numbers of row and columns for the table.</h3>
+    </div>
+  </div>
+
+
+
+  
+    <!--Code for form was taken from W3Schools Website-->
+        <form id="form" action="hw4.html" method="post">
+        <div class="low_colX">
+            <label for="low_col">Low Range for Column </label><br>
+            <input id="low_col" type="text" name="low_col">
+         </div> 
+
+        <div class="slider1"><div id="lowcol_slider"></div></div><br>
+
+        <div class="high_colY">
+            <label for="high_col">High Range for Column </label><br>
+            <input id="high_col" type="text" name="high_col">
+        </div>   
+
+        <div class="slider2"><div id="highcol_slider"></div></div><br>
+
+        <div class="low_rowX">
+            <label for="low_row">Low Range for Row </label><br>
+            <input id="low_row" type="text"  name="low_row">
+        </div>  
+
+        <div class="slider3"><div id="lowrow_slider"></div></div><br>
+
+        <div class="high_rowY">
+            <label for="high_row">High Range for Row  </label><br>
+            <input id="high_row" type="text" name="high_row">
+        </div>
+
+        <div class="slider4"><div id="highrow_slider"></div></div><br>
+
+        <div class="button">
+            <input type="submit" class="btn btn-primary" value="Submit for Tab">
+            <button type="button" class="btn btn-primary" onClick="delete_tab()">Remove Selected Tab</button>
+        </div>
+            </form>
+    
+
+
+  <div id = "tabs">
+    <ul id="tab_input">
+      <li><a href = "#tab1">Current Table</a></li>
+    </ul>
+    <div id="tab1">
+      <div class="table">
+        <table class="table_2" id="mult_table"></table>
+      </div>
+    </div>
+  </div>
+
+
+
+</body>
+</html>
