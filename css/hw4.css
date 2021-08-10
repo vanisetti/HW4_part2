@@ -1,0 +1,117 @@
+
+/*
+Vijaya Anisetti
+vijaya_anisetti@student.uml.edu
+File: hw4.css
+Assignment: Creating an Interactive Dynamic Table
+The css that affects the positioning of the forms input fields and sliders
+as well as some properties that affect the color co-ordination of the tables and such. 
+*/
+
+table, th, td {
+    border: 3px solid rgb(183, 134, 196);
+    text-align: center;
+    padding: 20px;
+    margin: auto;
+    border-spacing: 30px;
+  }
+  
+  th, td{
+    width: 50px;
+    font-size: 25px;
+  }
+  
+  .error{
+    color: rgb(168, 121, 199);
+  }
+  
+  #lowcol_slider{
+    width: 60%;
+    background: rgb(91, 167, 129);
+    outline: none;
+  }
+  
+  #highcol_slider{
+    width: 60%;
+    background: rgb(91, 167, 129);
+    outline: none;
+  }
+  
+  #lowrow_slider{
+    width: 60%;
+    background: rgb(91, 167, 129);
+    outline: none;
+  
+  }
+  
+  #highrow_slider{
+    width: 60%;
+    background: rgb(91, 167, 129);
+    outline: none;
+  }
+  
+  .low_colX{
+    margin: auto;
+    width: 60%;
+    padding: 10px;
+  }
+  
+  .high_colY{
+    margin: auto;
+    width: 60%;
+    padding: 10px;
+  }
+  
+  .low_rowX{
+    margin: auto;
+    width: 60%;
+    padding: 10px;
+  }
+  
+  .high_rowY{
+    margin: auto;
+    width: 60%;
+    padding: 10px;
+  }
+  
+   /* slider styling*/
+  .slider1{
+    margin: auto;
+    padding-top: 20px;
+    padding-left: 400px;
+    padding-bottom: 20px;
+  }
+  
+  .slider2{
+    margin: auto;
+    padding-top: 20px;
+    padding-left: 400px;
+    padding-bottom: 20px;
+  }
+  
+  .slider3{
+    margin: auto;
+    padding-top: 20px;
+    padding-left: 400px;
+    padding-bottom: 20px;
+  }
+  
+  .slider4{
+    margin: auto;
+    padding-top: 20px;
+    padding-left: 400px;
+  }
+  
+  .button{
+    margin: auto;
+    padding-top: 40px;
+    padding-left: 400px;
+  }
+
+  #form{
+      font-family: 'Courier New', Courier, monospace;
+  }
+
+  /* x and y axis colors*/
+  table tr:nth-child(1){background-color: #dcb6f1;}
+  table td:nth-child(1){background-color: #dcb6f1;}
